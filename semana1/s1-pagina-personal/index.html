@@ -7,6 +7,149 @@
     <title>Pagina personal</title>
 </head>
 <body>
-    <h1>Pagina personal</h1>
+    <header>
+        <nav> 
+            <a href="#">
+                <figure>
+                    <img src="./img/logo.jpg" alt="Logo Elliot Garamendi" width="60px" />
+                </figure>
+            </a>
+          <ul>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Experiencia</a></li>
+            <li><a href="#">Habilidades</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+          <article>
+            <div>
+            <h1>Jeanfranco, tú mejor opción</h1>
+                <p>Hola, te saluda Jeanfranco Abrahan Lazarinos Armendariz; actulmente estudiante del curso de Frontend y Backend. Apasionado con la programación y el diseño grafico. Con conocimientos en la composición de software y hardware. Actualmente tengo 23 años y mis hobbies son la música y el dibujo. También manejo distintos softwares relacionados al diseño gráfico como Photoshop, Ilustrator, CorelDraw e Indesign; y software relacionados a la música como ProTools, FlStudio, Kontakt, Kstool entre otros. <br> 
+                No te limites y comunicate conmigo para que resuelvas cualquier tipo de duda que se te presente. ツ </p>
+            </div>
+                <figure>
+                    <img src="img/yo.jpg" alt="JeanfrancoLA" width="350px" />
+                </figure>
+          </article>
+
+          <section>
+            <h2>Experiencia</h2>
+                <table>
+                    <thead>
+                    <tr>
+                      <th>N</th>
+                      <th>Institución</th>
+                      <th>Cargo</th>
+                      <th>Funciones</th>
+                      <th>Periodo</th>
+                    </tr>
+                    </thead>
+
+                  <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Municipalidad Provincial AQP</td>
+                        <td>Apoyo SubGerencia</td>
+                        <td>Monitoreo de  control GPS del SIT</td>
+                        <td>Mayo, Setiembre 2021</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>I. E. P. "Marianista"</td>
+                        <td>Mantenimiento y Soporte Técnico</td>
+                        <td>Encargado de realizar mantenimiento al área de Informática</td>
+                        <td>Enero, Marzo 2020</td>
+                    </tr>
+                     <tr>
+                        <td>03</td>
+                        <td>I. E. P. "Marianista"</td>
+                        <td>Aistente Administrativo</td>
+                        <td>
+                            <ul>
+                                <li>Asistente de secretaria académica</li>
+                                <li>Coordinador de actividades de Promoría</li>
+                                <li>Atención al público</li>
+                            </ul>
+                        </td>
+                    <td>Marzo 2018, Marzo 2019</td>
+                     </tr>
+                     <tr>
+                         <td>04</td>
+                         <td>Independiente</td>
+                         <td>Diseñador y Streamer</td>
+                         <td>
+                             <ul>
+                             <li>Realizar transmisiones virtuales</li>
+                             <li>Diseñador de escenarios virtuales (Chroma)</li>   
+                            </ul>
+                        </td>
+                         <td>2016-2021</td>
+                     </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h2> Formulario </h2>
+
+                
+                    <form action="#">
+                       
+                        <h4>Datos</h4>
+
+                        <div>
+
+                            <label for="name">Nombre*</label><br/>
+                            <input type="text" placeholder="Ingrese su nombre" id="name" name="nombre" required />
+                        
+                        
+                            <label for="email">Correo*</label><br/>
+                            <input type="email" id="email" placeholder="Ingrese su Correo" name="email" required />
+                        
+                            <label for="phone">Celular*</label><br/>
+                            <input type="number" id="phone" placeholder="Ingrese su celular" name="celular" min="900000000" max="999999999"
+                            required/>
+                        
+                            <label for="message">Dejanos tú consulta*</label><br/>
+                            <textarea id="message" placeholder="Escríbeme un mensaje" name="mensaje" cols="30" rows="10" required></textarea>
+                            <hr/>
+                        
+
+                        <h4>Interés</h4>
+                        <br>
+                        <label for="horarios">Disponibilidad de Horarios</label>
+                        &emsp;
+                        <select name="horarios" id="horarios" required>
+                          <option value="s-diurnos">Lun-Mie-Vie 9:00-13:00 </option>
+                          <option value="s-nocturno">Mar-Jue 17:00-22:00</option>
+                          <option value="fs-diurno">Sab-Dom 11:00-16:00</option>
+                        </select>
+                        <hr />
+
+                        <h4>Plan</h4><br/>
+                        <input type="radio" name="plan" id="Avanzado" value="Avanzado" required />
+                        <label for="Avanzado">Avanzado</label>
+                        <input type="radio" name="plan" id="Intermedio" value="Intermedio" required />
+                        <label for="Intermedio">Intermedio</label>
+                        <input type="radio" name="plan" id="Basico" value="Basico" required />
+                        <label for="Basico">Básico</label>
+                        <hr />
+                        <h4>¿Cómo me contactaste?</h4><br/>
+                        <input type="checkbox" name="upgrade" id="Redes sociales" value="Redes sociales" />
+                        <label for="css">Redes sociales</label><br>
+                        <input type="checkbox" name="upgrade" id="Tv" value="Tv" />
+                        <label for="javascript">Tv</label><br>
+                        <input type="checkbox" name="upgrade" id="Folleto" value="Folleto" />
+                        <label for="html">Folleto</label>
+                        <br />
+                        <div>
+                        <button>Enviar Solicitud</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+      </main>
 </body>
 </html>
