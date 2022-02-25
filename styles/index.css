@@ -1,0 +1,16 @@
+:root{
+    scroll-behavior: smooth;
+    --theme-color: #001574;
+    --theme-color-light: #fff;
+
+    --theme-color-transparent: #0015749a;
+    --theme-color-light2-transparent: #00b7ff9a;
+
+    --color-text-light: #00b7ff;;
+    --color-text-dark: #3d3c4e;
+
+    --box-shadow: #21242c80;
+
+    --text-type: 'Dancing Script', cursive;
+    --text-type2:'Roboto Serif', sans-serif;
+}
